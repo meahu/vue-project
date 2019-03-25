@@ -17,24 +17,26 @@ module.exports = {
                 use: ['vue-loader']
             },
             {
+                test: /\.css$/,
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }]
+            },
+            {
+                test: /\.(ttf|eot|svg|woff|woff2)$/,
+                use: 'url-loader'
+            },
+            {
                 test: /\.less$/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader',   
-                        options: {
-                            importLoaders: 1
-                        }
-                    },
-                    {
-                        loader: 'less-loader',
-                        options: {
-                            importLoaders: 1
-                        }
-                    }
-                ]
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader"
+                }, {
+                    loader: "less-loader"
+                }]
             }
         ]
     },

@@ -10,3 +10,6 @@ loader [作用]
 vue-loader [转换.vue文件]
 vue-template-compiler [解析<template></template>]
 vue-router [解析<router-view></router-view>]，需要在 Vue 里 use 才能使用
+less less-loader
+style-loader
+css-loader
