@@ -2,7 +2,7 @@
 使用 webapck 从0到1搭建 vue 项目
 
 # 技术栈
-Vue + Vue-router + Axios + ElementUI + Webpack
+Vue + Vue-router + Axios + [ElementUI](http://element-cn.eleme.io/#/zh-CN/component/steps) + Webpack
 
 # 笔记
 ## 需要的loader
