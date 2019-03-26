@@ -20,6 +20,8 @@
   </template>
 
   <script>
+    import axios from 'axios';
+
     export default {
       data() {
         return {
@@ -41,6 +43,11 @@
             address: '上海市普陀区金沙江路 1516 弄'
           }]
         }
+      },
+      mounted () {
+        this.$http.get('/table/list').then(function (response) {
+          debugger
+        });
       }
     }
   </script>

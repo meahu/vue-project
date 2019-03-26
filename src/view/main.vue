@@ -27,13 +27,16 @@
                     <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
                     </el-menu>
             </el-header>
+
+            <!-- @open="handleOpen" -->
+            <!-- @close="handleClose" -->
             <el-container>
                 <el-aside width="200px">
                     <el-menu
                     default-active="2"
                     class="el-menu-vertical-demo"
-                    @open="handleOpen"
-                    @close="handleClose">
+                    
+                    >
                         <el-submenu index="1">
                             <template slot="title">
                                 <i class="el-icon-location"></i>
@@ -68,6 +71,10 @@ export default {
                 {
                     name: '步骤条',
                     path: '/step'
+                },
+                {
+                    name: '步骤条',
+                    path: '/tabs'
                 }
             ]
         }
