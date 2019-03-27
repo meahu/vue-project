@@ -15,7 +15,7 @@ style-loader
 css-loader
 
 mockjs
-axios
+axios：返回的统一处理，提交数据添加token
 多环境
 
 ## 别名
