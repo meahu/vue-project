@@ -13,3 +13,12 @@ vue-router [解析<router-view></router-view>]，需要在 Vue 里 use 才能使
 less less-loader
 style-loader
 css-loader
+
+mockjs
+axios
+多环境
+
+## 别名
+后缀填充
+指定 vue
+@

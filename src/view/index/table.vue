@@ -21,6 +21,7 @@
 
   <script>
     import axios from 'axios';
+    import {getUserInfo} from '@/request/user/index.js'
 
     export default {
       data() {
@@ -45,7 +46,9 @@
         }
       },
       mounted () {
-        this.$http.get('/table/list').then(function (response) {
+        getUserInfo({a: 1, b: 2}).then(function (response) {
+          debugger
+        }).catch(err => {
           debugger
         });
       }

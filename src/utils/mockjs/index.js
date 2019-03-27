@@ -7,5 +7,4 @@ var data = Mock.mock({
     }]
 })
 
-
-Mock.mock('http://127.0.0.1:3000/table/list', 'get', reponseData(JSON.stringify(data)));
+Mock.mock('http://127.0.0.1:3000/api/table/list2', 'get', reponseData(data));

@@ -12,22 +12,17 @@ service.interceptors.request.use(config => {
 });
 
 service.interceptors.response.use(response => {
-
-    debugger
-    if (response.status === 200) {
-
-    } else {
-
-    }
-    return response;
+    return Promise.resolve(response.data);
 }, error => {
-    debugger
-    return Promise.reject(error);
+    return Promise.reject({
+        err_code: error.response.status,
+        err_msg: error.response.data.message
+    });
 });
 
 const request = {
     install (Vue) {
-        Vue.prototype.$http = {
+        window.$http = {
             get (url, data) {
                 data = data || {};
                 return new Promise((resolve, reject) => {

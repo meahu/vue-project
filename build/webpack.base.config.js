@@ -3,6 +3,10 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const htmlWebpackPlugin = require('html-webpack-plugin');
 const rootPath = path.resolve(__dirname, '..');
 
+function resolve (dir) {
+    return path.join(__dirname, '..', dir)
+}
+
 module.exports = {
     entry: {
         main: './src/main.js'
@@ -42,7 +46,8 @@ module.exports = {
     },
     resolve: {
         alias: {
-            'vue$': 'vue/dist/vue.esm.js'
+            'vue$': 'vue/dist/vue.esm.js',
+            '@': resolve('src'),
         }
     },
     plugins: [
