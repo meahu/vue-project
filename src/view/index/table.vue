@@ -47,9 +47,7 @@
       },
       mounted () {
         getUserInfo({a: 1, b: 2}).then(function (response) {
-          debugger
         }).catch(err => {
-          debugger
         });
       }
     }

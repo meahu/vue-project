@@ -7,4 +7,4 @@ var data = Mock.mock({
     }]
 })
 
-Mock.mock('http://127.0.0.1:3000/api/table/list2', 'get', reponseData(data));
+Mock.mock('http://127.0.0.1:3000/api/table/list2?a=1&b=2', 'get', reponseData(data));

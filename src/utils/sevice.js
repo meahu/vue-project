@@ -23,10 +23,10 @@ service.interceptors.response.use(response => {
 const request = {
     install (Vue) {
         window.$http = {
-            get (url, data) {
-                data = data || {};
+            get (url, params) {
+                params = params || {};
                 return new Promise((resolve, reject) => {
-                    service.get(url, {data}).then(response => {
+                    service.get(url, {params}).then(response => {
                         resolve(response)
                     }).catch(error => {
                         reject(error);

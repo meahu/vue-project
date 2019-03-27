@@ -6,7 +6,7 @@ import router from './router/index.js';
 import VueRouter from 'vue-router';
 import service from './utils/sevice.js'
 
-// require('./utils/mockjs/index.js');
+process.env.NODE_ENV === 'mock' && require('./utils/mockjs/index.js');
 
 Vue.use(Element);
 Vue.use(VueRouter);
