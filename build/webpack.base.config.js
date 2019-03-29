@@ -13,7 +13,7 @@ module.exports = {
         main: './src/main.js'
     },
     output: {
-        path: rootPath + 'dist'
+        path: resolve('dist')
     },
     module: {
         rules: [
@@ -22,11 +22,15 @@ module.exports = {
                 use: ['vue-loader']
             },
             {
-                test: /\.css$/,
+                test: /\.(jpe?g|png)$/,
                 use: [{
-                    loader: "style-loader"
-                }, {
-                    loader: "css-loader"
+                    loader: 'url-loader',
+                    options: {
+                        name: "[name]-[hash:5].min.[ext]",
+                        limit: 20000, // size <= 20KB
+                        publicPath: "images",
+                        outputPath: "images"
+                    }
                 }]
             },
             {

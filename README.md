@@ -22,3 +22,10 @@ axios：返回的统一处理，提交数据添加token
 后缀填充
 指定 vue
 @
+
+引入css
+引入字体图标
+引入图片
+
+
+未解决：import img2 from '@/asset/images/img1.png'   img2 用不了

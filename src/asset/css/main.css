@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+    font-size: 100px;
+}
+body {
+    font-family: Helvetica, Arial,"PingFang SC", "STHeiti", "Microsoft YaHei", "Heiti SC", "微软雅黑", "SimSun", "宋体", "华文黑体", Helvetica, Tahoma, Arial sans-serif;
+    color: #333333;
+    font-size: 0.14rem;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+ol, ul, .h1, .h2, .h3,.h4, .h5, .h6, h1, h2, h3, h4, h5, h6, p, label {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a, a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+a {
+    color: #000;
+}
+a:hover {
+    color: #4a86ca;
+}
+.no-row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.pointer {
+    cursor: pointer;
+}
+.ml--30 {
+    margin-left: -30px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.highlight {
+    color: #4a86ca;
+}
+.important-tip {color: red;}
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.clearfix {
+    content: '';
+    display: block;
+    clear: both;
+}
+.require {
+    color: red;
+}

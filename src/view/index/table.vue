@@ -1,29 +1,38 @@
 <template>
-    <el-table
-      :data="tableData"
-      style="width: 100%">
-      <el-table-column
-        prop="date"
-        label="日期"
-        width="180">
-      </el-table-column>
-      <el-table-column
-        prop="name"
-        label="姓名"
-        width="180">
-      </el-table-column>
-      <el-table-column
-        prop="address"
-        label="地址">
-      </el-table-column>
-    </el-table>
+    <div>
+      <el-table
+        :data="tableData"
+        style="width: 100%">
+        <el-table-column
+          prop="date"
+          label="日期"
+          width="180">
+        </el-table-column>
+        <el-table-column
+          prop="name"
+          label="姓名"
+          width="180">
+        </el-table-column>
+        <el-table-column
+          prop="address"
+          label="地址">
+        </el-table-column>
+      </el-table>
+      <div class="haha w10">111</div>
+      <img src="/static/images/img2.png" alt="">
+    </div>
+    
   </template>
 
   <script>
     import axios from 'axios';
     import {getUserInfo} from '@/request/user/index.js'
+    import img2 from '@/asset/images/img1.png'
 
     export default {
+      components : {
+        img2
+      },
       data() {
         return {
           tableData: [{
@@ -52,3 +61,9 @@
       }
     }
   </script>
+
+<style lang="less">
+.haha {
+  color: red;
+}
+</style>

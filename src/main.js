@@ -5,6 +5,8 @@ import 'element-ui/lib/theme-chalk/index.css';
 import router from './router/index.js';
 import VueRouter from 'vue-router';
 import service from './utils/sevice.js'
+import '@/asset/iconfont/iconfont.css'
+import '@/asset/css/main.css'
 
 process.env.NODE_ENV === 'mock' && require('./utils/mockjs/index.js');
 
