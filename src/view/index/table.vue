@@ -19,7 +19,7 @@
         </el-table-column>
       </el-table>
       <div class="haha w10">111</div>
-      <img src="/static/images/img2.png" alt="">
+      <img src="../../../static/images/img2.png" alt="">
     </div>
     
   </template>
