@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const ProgressBarWebpackPlugin = require('progress-bar-webpack-plugin');
 const rootPath = path.resolve(__dirname, '..');
 
 function resolve (dir) {
@@ -66,5 +67,6 @@ module.exports = {
                 NODE_ENV: '"mock"'
             }
         }),
+        new ProgressBarWebpackPlugin()
     ]
 }

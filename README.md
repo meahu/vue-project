@@ -14,6 +14,8 @@ less less-loader
 style-loader
 css-loader
 
+动态加载各个环境的配置
+
 mockjs
 axios：返回的统一处理，提交数据添加token
 多环境
