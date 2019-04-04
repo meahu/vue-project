@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config ./build/webpack.dev.config.js",
+    "dev2": "webpack-dashboard -- webpack --mode development --config ./build/webpack.dev.config.js",
     "prod": "webpack --mode production --config ./build/webpack.prod.config.js"
   },
   "author": "",
@@ -22,12 +23,17 @@
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "mockjs": "^1.0.1-beta3",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "speed-measure-webpack-plugin": "^1.3.1",
     "style-loader": "^0.23.1",
     "url-loader": "^1.1.2",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.0",
     "vue-router": "^3.0.2",
     "vue-template-compiler": "^2.6.10",
+    "webpack-build-notifier": "^0.1.31",
+    "webpack-bundle-analyzer": "^3.1.0",
+    "webpack-dashboard": "^3.0.2",
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.2.1"
   },
