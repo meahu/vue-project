@@ -1,6 +1,7 @@
 <template>
     <div>
-      dfsfsfsf
+      <haha :click1="click1"></haha>
+      <haha :click1="click2"></haha>
       <el-table
         :data="tableData"
         style="width: 100%">
@@ -28,11 +29,10 @@
   <script>
     import axios from 'axios';
     import {getUserInfo} from '@/request/user/index.js'
-    import img2 from '@/asset/images/img1.png'
+    // import img2 from '@/asset/css/test2.css'
 
     export default {
       components : {
-        img2
       },
       data() {
         return {
@@ -55,7 +55,17 @@
           }]
         }
       },
+      methods: {
+        click1 () {
+          console.log('click1');
+        },click2 () {
+          console.log('click2');
+        }
+      },
       mounted () {
+        this.$a('1');
+        this.$a('2');
+        this.$a('3');
         getUserInfo({a: 1, b: 2}).then(function (response) {
         }).catch(err => {
         });

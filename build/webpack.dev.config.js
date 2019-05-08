@@ -12,6 +12,12 @@ module.exports = merge(baseConfig, {
                     loader: "css-loader"
                 }]
             },
+            {
+                test: /\.(vue|js|jsx)$/,
+                // loader: 'eslint-loader',
+                exclude: /node_modules/,
+                enforce: 'pre'
+              }
         ]
     },
     devServer: {
@@ -22,6 +28,7 @@ module.exports = merge(baseConfig, {
                 pathRewrite: {'^/api' : '/api'},
                 changeOrigin: true
             }
-        }
+        },
+        overlay: true
     }
 });

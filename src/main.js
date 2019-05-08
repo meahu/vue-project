@@ -1,22 +1,26 @@
-import Vue from 'vue';
-import App from './view/App.vue';
+import Vue from 'vue'
+import App from './view/App.vue'
 import Element from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css';
-import router from './router/index.js';
-import VueRouter from 'vue-router';
+import 'element-ui/lib/theme-chalk/index.css'
+import router from './router/index.js'
+import VueRouter from 'vue-router'
 import service from './utils/sevice.js'
 import '@/asset/iconfont/iconfont.css'
 import '@/asset/css/main.css'
+import haha from '@/components/index'
+import a from '@/components/a'
 
-process.env.NODE_ENV === 'mock' && require('./utils/mockjs/index.js');
-
-Vue.use(Element);
-Vue.use(VueRouter);
-Vue.use(service);
+process.env.NODE_ENV === 'mock' && require('./utils/mockjs/index.js')
+// Vue.prototype.$a = a
+Vue.use(a)
+Vue.use(haha)
+Vue.use(Element)
+Vue.use(VueRouter)
+Vue.use(service)
 
 new Vue({
-    el: '#app',
-    template: '<App/>',
-    router: router,
-    components: {App}
-});
+  el: '#app',
+  template: '<App/>',
+  router: router,
+  components: { App }
+})
